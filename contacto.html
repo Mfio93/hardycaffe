@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hardy caffe | Contacto</title>
+  <!--Favicon-->
+  <link rel="shortcut icon" href="imagenes/aae89bde5310bbc00a8f077465bfb22f-cafe-en-grano-marron.png.webp" type="image/x-icon">
+  <!-- CSS propio -->
+  <link rel="stylesheet" href="estilo.css" />
+  <!-- Fuente externa -->
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!--font-awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+      <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+</head>
+<body>
+  <header class="header_section fixed-top">
+   <nav class="navbar">
+      <a class="logo" href="#">
+         <img src="imagenes/logo.jpg" alt="Logo">
+      </a>
+      <div class="menu_icons">
+         <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+         <a href="nosotros.html"><i class="fas fa-users"></i> Nosotros</a>
+         <a href="tienda.html"><i class="fas fa-shopping-cart"></i> Tienda</a>
+         <a href="contacto.html"><i class="fas fa-address-book"></i> Contacto</a>
+         <a href="blog.html"><i class="fab fa-microblog"></i> Blog</a>
+         <a href="noticias.html"><i class="fas fa-newspaper"></i> Noticias</a>
+      </div>
+   </nav>
+</header>
+    <!-- CONTENIDO PRINCIPAL -->
+<main class="container mt-5 pt-4">
+
+  <!-- TÍTULOS SUPERIORES -->
+  <div class="row g-4 align-items-end mb-3 mb-lg-4">
+    <div class="col-12 col-lg-6">
+      <h1 class="section-title h3 mb-0">Formulario de contacto</h1>
+    </div>
+    <div class="col-12 col-lg-6">
+      <h2 class="section-title h3 mb-0 text-lg-end">Sede operativa</h2>
+    </div>
+  </div>
+
+  <!-- 2 COLUMNAS -->
+  <div class="row g-4 g-lg-5">
+
+    <!-- FORMULARIO -->
+    <div class="col-12 col-lg-6">
+      <form id="contactForm" class="card border-0 shadow-sm p-3 p-lg-4" novalidate>
+
+        <!-- TÍTULO -->
+        <h2 class="h4 fw-semibold mb-3">Formulario de Contacto</h2>
+
+        <!-- CAMPO NOMBRE -->
+        <div class="mb-3">
+          <label class="form-label text-uppercase small" for="name">
+            Tu nombre <span class="text-danger">*</span>
+          </label>
+          <input id="name" class="form-control" placeholder="Nombre" required />
+        </div>
+
+        <!-- CAMPO EMAIL -->
+        <div class="mb-3">
+          <label class="form-label text-uppercase small" for="email">
+            Tu e-mail <span class="text-danger">*</span>
+          </label>
+          <div class="input-group">
+            <span class="input-group-text">
+              <i class="bi bi-envelope"></i>
+            </span>
+            <input
+              id="email"
+              type="email"
+              class="form-control"
+              placeholder="email@dominio.com"
+              required
+            />
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-bs-toggle="tooltip"
+              data-bs-title="Usa un correo válido para poder responderte"
+            >
+              <i class="bi bi-info-circle"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- CAMPO MENSAJE -->
+        <div class="mb-3">
+          <label class="form-label text-uppercase small" for="message">
+            Mensaje <span class="text-danger">*</span>
+          </label>
+          <textarea
+            id="message"
+            class="form-control"
+            rows="6"
+            placeholder="Escribe tu mensaje..."
+            required
+          ></textarea>
+        </div>
+
+        <!-- PRIVACIDAD -->
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" id="privacy" required />
+          <label class="form-check-label" for="privacy">
+            Confirmo que he leído la política de privacidad
+            <a
+              href="#"
+              class="ms-1"
+              data-bs-toggle="popover"
+              data-bs-title="Política de privacidad"
+              data-bs-content="Resumen: usamos tus datos solo para responder tu consulta. No compartimos con terceros sin base legal."
+            >
+              Ver resumen
+            </a>
+          </label>
+        </div>
+
+        <!-- BOTONES -->
+        <div class="d-flex gap-2 align-items-center">
+          <button type="submit" class="btn btn-primary px-4">
+            <i class="bi bi-send me-1"></i> Enviar mensaje
+          </button>
+          <button type="reset" class="btn btn-outline-secondary">Limpiar</button>
+
+          <span class="ms-auto small text-muted">
+            <i class="bi bi-shield-lock me-1"></i> Tus datos están protegidos
+          </span>
+        </div>
+        <!-- MODAL DE ÉXITO -->
+<div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header bg-success text-white">
+        <h5 class="modal-title">
+          <i class="bi bi-check-circle me-2"></i> ¡Éxito!
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="d-flex align-items-start gap-2">
+          <i class="bi bi-check-circle-fill text-success fs-4"></i>
+          <div>
+            Tu mensaje ha sido recibido.<br>
+            Te responderemos a la brevedad.
+            <div class="text-muted small mt-1">
+              (Esto es solo una simulación)
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+          Aceptar
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+      </form>
+    </div>
+    
+
+    <!-- DIRECCIÓN + HORARIOS -->
+    <div class="col-12 col-lg-6">
+      <div class="card border-0 shadow-sm p-3 p-lg-4 h-100">
+
+        <!-- TÍTULO -->
+        <h2 class="h4 fw-semibold mb-1">Dirección</h2>
+        <p class="text-muted mb-4">
+          Información de contacto y disponibilidad de nuestra sede operativa.
+        </p>
+
+        <!-- DIRECCIÓN + CONTACTO -->
+        <div class="d-flex align-items-start justify-content-between gap-3">
+          <div>
+            <div class="mb-2">
+              <div class="fw-semibold">
+                <i class="bi bi-geo-alt me-1"></i> Via Galileo Galilei, 14
+              </div>
+              <div class="text-muted">20090 Assago (Milano) · Italia</div>
+            </div>
+
+            <div class="mb-2">
+              <div>
+                <i class="bi bi-telephone me-1"></i>
+                <a class="link-dark text-decoration-none" href="tel:+39024880861">
+                  +39 02 4880861
+                </a>
+              </div>
+              <div>
+                <i class="bi bi-envelope-at me-1"></i>
+                <a class="link-primary text-decoration-none" href="mailto:info@caffehardy.com">
+                  info@caffehardy.com
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-end">
+            <button
+              type="button"
+              class="btn btn-outline-primary btn-sm"
+              data-bs-toggle="tooltip"
+              data-bs-title="Ir al mapa"
+              onclick="document.getElementById('map').scrollIntoView({behavior:'smooth'});"
+            >
+              <i class="bi bi-map me-1"></i> Ver mapa
+            </button>
+          </div>
+        </div>
+
+        <hr class="my-4" />
+
+        <!-- HORARIOS -->
+        <div class="d-flex align-items-center gap-2 mb-2">
+          <h3 class="h4 fw-semibold mb-0">Horario de Atención</h3>
+          <span class="badge text-bg-light border">
+            <i class="bi bi-clock me-1"></i> GMT-5
+          </span>
+        </div>
+        <p class="text-muted mb-3">Detalle de disponibilidad de nuestro equipo de soporte.</p>
+
+        <!-- TABLA -->
+        <div class="table-responsive">
+          <table class="table align-middle">
+            <thead class="table-dark">
+              <tr>
+                <th scope="col" style="width: 56px;">#</th>
+                <th scope="col">Día</th>
+                <th scope="col">Horario</th>
+                <th scope="col" class="text-end">Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Martes - Viernes</td>
+                <td>9:00 - 18:00</td>
+                <td class="text-end">
+                  <span class="badge text-bg-success">
+                    <i class="bi bi-check-circle me-1"></i> Abierto
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Sábado</td>
+                <td>9:00 - 13:00</td>
+                <td class="text-end">
+                  <span class="badge text-bg-warning">
+                    <i class="bi bi-sun me-1"></i> Medio día
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Lunes y Domingo</td>
+                <td>Cerrado</td>
+                <td class="text-end">
+                  <span class="badge text-bg-danger">
+                    <i class="bi bi-x-circle me-1"></i> Cerrado
+                  </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+
+  </div><!-- /row -->
+</main><!-- /container -->
+
+<!-- MAPA FULL WIDTH ABAJO (100% horizontal) -->
+<section id="map" class="container mt-4 mb-5">
+  <div class="card border-0 shadow-sm overflow-hidden">
+    <div class="ratio ratio-21x9">
+      <iframe
+        title="Mapa"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.463552996698!2d9.194606576579037!3d45.48060927107427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c6c92f3edd45%3A0xbaf7977b8831a42d!2sV.%20Galileo%20Galilei%2C%2014%2C%2020124%20Milano%20MI!5e0!3m2!1sit!2sit!4v1765766814433!5m2!1sit!2sit"
+
+      ></iframe>
+    </div>
+  </div>
+</section>
+
+    <footer class="footer py-4 bg-white">
+    <div class="container d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between gap-2">
+      <div>
+        <div class="fw-semibold ">Evaluacion Integral Isil © 2025-II</div>
+        <small class="text-muted">Curso de Diseño y Desarrollo Web</small>
+      </div>
+      <div class="d-flex gap-3 text-dark">
+  <a href="#" class="text-dark fs-4">
+    <i class="fab fa-youtube"></i>
+  </a>
+  <a href="#" class="text-dark fs-4">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="#" class="text-dark fs-4">
+    <i class="fab fa-facebook-square"></i>
+  </a>
+</div>
+    </div>
+  </footer>
+
+<!-- JS Bootstrap (tooltips/popovers) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    .forEach(el => new bootstrap.Tooltip(el));
+
+  document.querySelectorAll('[data-bs-toggle="popover"]')
+    .forEach(el => new bootstrap.Popover(el));
+    const form = document.getElementById('contactForm');
+
+  form.addEventListener('submit', function (event) {
+    event.preventDefault(); // evita recargar la página
+
+    // Validación HTML5
+    if (!form.checkValidity()) {
+      form.classList.add('was-validated');
+      return;
+    }
+
+    // Mostrar modal de éxito
+    const modal = new bootstrap.Modal(
+      document.getElementById('successModal')
+    );
+    modal.show();
+
+    // Limpiar formulario
+    form.reset();
+    form.classList.remove('was-validated');
+  });
+    
+</script>
+
+  
+  </body>
+</html>

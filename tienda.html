@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hardy caffe | Tienda</title>
+  <!--Favicon-->
+  <link rel="shortcut icon" href="imagenes/aae89bde5310bbc00a8f077465bfb22f-cafe-en-grano-marron.png.webp" type="image/x-icon">
+  <!-- CSS propio -->
+  <link rel="stylesheet" href="estilo.css" />
+  <!-- Fuente externa -->
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!--font-awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      main {
+  margin-top: 50px;
+}
+</style>
+
+</head>
+<body>
+  <header class="header_section fixed-top">
+   <nav class="navbar">
+      <a class="logo" href="#">
+         <img src="imagenes/logo.jpg" alt="Logo">
+      </a>
+      <div class="menu_icons">
+         <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+         <a href="nosotros.html"><i class="fas fa-users"></i> Nosotros</a>
+         <a href="tienda.html"><i class="fas fa-shopping-cart"></i> Tienda</a>
+         <a href="contacto.html"><i class="fas fa-address-book"></i> Contacto</a>
+         <a href="blog.html"><i class="fab fa-microblog"></i> Blog</a>
+         <a href="noticias.html"><i class="fas fa-newspaper"></i> Noticias</a>
+      </div>
+   </nav>
+</header>
+
+<br>
+<main class="container py-4">
+    
+      <!-- TABS -->
+      <div class="bg-white border rounded-4 p-3 p-md-4 shadow-sm">
+        <ul class="nav nav-tabs gap-2" id="catalogTabs" role="tablist">
+  <li class="nav-item" role="presentation">
+        <button
+        class="nav-link active"
+        id="cafe-grano-tab"
+        data-bs-toggle="tab"
+        data-bs-target="#cafe-grano"
+        type="button"
+        role="tab"
+        aria-controls="cafe-grano"
+        aria-selected="true"
+        >
+        Café de grano
+</button>
+  </li>
+
+  <li class="nav-item" role="presentation">
+    <button
+      class="nav-link"
+      id="capsulas-tab"
+      data-bs-toggle="tab"
+      data-bs-target="#capsulas"
+      type="button"
+      role="tab"
+      aria-controls="capsulas"
+      aria-selected="false"
+    >
+      Café en cápsula
+    </button>
+  </li>
+
+  <li class="nav-item" role="presentation">
+    <button
+      class="nav-link"
+      id="merchandising-tab"
+      data-bs-toggle="tab"
+      data-bs-target="#merchandising"
+      type="button"
+      role="tab"
+      aria-controls="merchandising"
+      aria-selected="false"
+    >
+      Merchandising
+      <span class="badge text-bg-warning ms-2">Nuevo</span>
+    </button>
+  </li>
+</ul>
+
+        <div class="tab-content pt-4" id="catalogTabsContent">
+          <!-- TAB: CAFÉ DE GRANO -->
+<section
+  class="tab-pane fade show active"
+  id="cafe-grano"
+  role="tabpanel"
+  aria-labelledby="cafe-grano-tab"
+>
+  <h2 class="h5 mb-3">Café de grano</h2>
+
+  <div class="row g-3 g-md-4">
+    <!-- CARD 1 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card h-100 border-0 shadow-sm rounded-4">
+        <div class="card-body d-flex flex-column p-3">
+          <img
+            src="https://res.cloudinary.com/dfxkoiri5/image/upload/v1765840528/antica-bottega-1kg_vsnlvu.jpg"
+            class="img-fluid mx-auto d-block mb-3"
+            alt="Café arábica en grano"
+            loading="lazy"
+            data-bs-toggle="tooltip"
+            data-bs-title="Intensidad 5/10"
+            />
+
+          <h3 class="h6 fw-semibold mb-1">Antica Bottega 1kg</h3>
+          <p class="text-secondary small mb-3">CAFE EN GRANO</p>
+
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="fw-bold">24,90 €</span>
+            <button
+              class="btn btn-success btn-sm rounded-pill"
+              data-bs-toggle="tooltip"
+              data-bs-title="Envío en 24h"
+            >
+              🛒 Añadir
+            </button>
+          </div>
+
+          <div class="pt-2">
+            <span class="badge text-bg-success">Disponible</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card h-100 border-0 shadow-sm rounded-4">
+        <div class="card-body d-flex flex-column p-3">
+          <img
+          src="https://res.cloudinary.com/dfxkoiri5/image/upload/v1765840533/anticabottega-500g_bvaesa.jpg"
+          class="img-fluid mx-auto d-block mb-3"
+          alt="Café mezcla intensa"
+          loading="lazy"
+          data-bs-toggle="tooltip"
+          data-bs-title="Intensidad 5/10"
+        />
+
+          <h3 class="h6 fw-semibold mb-1">Antica Bottega 500g.</h3>
+          <p class="text-secondary small mb-3">CAFE EN GRANO</p>
+
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="fw-bold">12,70 €</span>
+            <button
+              class="btn btn-success btn-sm rounded-pill"
+              data-bs-toggle="tooltip"
+              data-bs-title="Envío en 48h"
+            >
+              🛒 Añadir
+            </button>
+          </div>
+
+          <div class="pt-2">
+            <span class="badge text-bg-warning text-dark">Stock limitado</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card h-100 border-0 shadow-sm rounded-4">
+        <div class="card-body d-flex flex-column p-3">
+          <img
+          src="https://res.cloudinary.com/dfxkoiri5/image/upload/v1765840566/espresso-1kg_tppbpz.jpg"
+          class="img-fluid mx-auto d-block mb-3"
+          alt="Café ecológico"
+          loading="lazy"
+          data-bs-toggle="tooltip"
+          data-bs-title="Intensidad 7/10"
+        />
+
+          <h3 class="h6 fw-semibold mb-1">Espresso 1Kg</h3>
+          <p class="text-secondary small mb-3">CAFE EN GRANO</p>
+
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="fw-bold">22,10 €</span>
+            <button
+              class="btn btn-success btn-sm rounded-pill"
+              data-bs-toggle="tooltip"
+              data-bs-title="Envío en 24–48h"
+            >
+              🛒 Añadir
+            </button>
+          </div>
+
+          <div class="pt-2">
+            <span class="badge text-bg-success">Disponible</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card h-100 border-0 shadow-sm rounded-4">
+        <div class="card-body d-flex flex-column p-3">
+          <img
+          src="https://res.cloudinary.com/dfxkoiri5/image/upload/v1765840568/espresso-500g_cyebho.jpg"
+          class="img-fluid mx-auto d-block mb-3 opacity-75"
+          alt="Café descafeinado"
+          loading="lazy"
+          data-bs-toggle="tooltip"
+          data-bs-title="Intensidad 7/10"
+        />
+
+          <h3 class="h6 fw-semibold mb-1">Espresso 500 gr</h3>
+          <p class="text-secondary small mb-3">CAFE EN GRANO</p>
+
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="fw-bold">11,50 €</span>
+            <button
+              class="btn btn-secondary btn-sm rounded-pill"
+              disabled
+              data-bs-toggle="tooltip"
+              data-bs-title="Temporalmente agotado"
+            >
+              🛒 Añadir
+            </button>
+          </div>
+
+          <div class="pt-2">
+            <span class="badge text-bg-secondary">Agotado</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+          <!-- TAB: CAFÉ EN CÁPSULA -->
+<section
+  class="tab-pane fade"
+  id="capsulas"
+  role="tabpanel"
+  aria-labelledby="capsulas-tab"
+>
+  <h2 class="h5 mb-3">Café en cápsula</h2>
+
+  <div class="row g-3 g-md-4">
+    <!-- CARD 1 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card h-100 border-0 shadow-sm rounded-4">
+        <div class="card-body d-flex flex-column p-3">
+          <img
+            src="https://res.cloudinary.com/dfxkoiri5/image/upload/v1765840557/capsula-espresso1_eja6d0.jpg"
+            class="img-fluid mx-auto d-block mb-3"
+            alt="Cápsulas espresso"
+            loading="lazy"
+            data-bs-toggle="tooltip"
+            data-bs-title="Intensidad 6/10"
+          />
+
+          <h3 class="h6 fw-semibold mb-1">Pack 100 Èspresso1882 Cremoso</h3>
+          <p class="text-secondary small mb-3">100 CAPSULE COMPATIBILI NESPRESSO®*</p>
+
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="fw-bold">31,20 €</span>
+            <button
+              class="btn btn-success btn-sm rounded-pill"
+              data-bs-toggle="tooltip"
+              data-bs-title="Envío en 24–48h"
+            >
+              🛒 Añadir
+            </button>
+          </div>
+
+          <div class="pt-2">
+            <span class="badge text-bg-success">Disponible</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card h-100 border-0 shadow-sm rounded-4">
+        <div class="card-body d-flex flex-column p-3">
+          <img
+            src="https://res.cloudinary.com/dfxkoiri5/image/upload/v1765840552/capsula-espresso2_ksa1kq.jpg"
+            class="img-fluid mx-auto d-block mb-3"
+            alt="Cápsulas lungo"
+            loading="lazy"
+            data-bs-toggle="tooltip"
+            data-bs-title="Intensidad 4/10"
+          />
+
+          <h3 class="h6 fw-semibold mb-1">Pack 100 Èspresso1882 Oro</h3>
+          <p class="text-secondary small mb-3">100 CAPSULE COMPATIBILI NESPRESSO®*</p>
+
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="fw-bold">31,20 €</span>
+            <button
+              class="btn btn-success btn-sm rounded-pill"
+              data-bs-toggle="tooltip"
+              data-bs-title="Envío en 48h"
+            >
+              🛒 Añadir
+            </button>
+          </div>
+
+          <div class="pt-2">
+            <span class="badge text-bg-warning text-dark">Stock limitado</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CARD 3 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card h-100 border-0 shadow-sm rounded-4">
+        <div class="card-body d-flex flex-column p-3">
+          <img
+            src="https://res.cloudinary.com/dfxkoiri5/image/upload/v1765840555/capsula-espresso3_awhfzg.jpg"
+            class="img-fluid mx-auto d-block mb-3"
+            alt="Cápsulas intenso"
+            loading="lazy"
+            data-bs-toggle="tooltip"
+            data-bs-title="Intensidad 8/10"
+          />
+
+          <h3 class="h6 fw-semibold mb-1">Pack 100 Èspresso1882 Intenso</h3>
+          <p class="text-secondary small mb-3">100 CAPSULE COMPATIBILI NESPRESSO®*</p>
+
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="fw-bold">31,20 €</span>
+            <button
+              class="btn btn-success btn-sm rounded-pill"
+              data-bs-toggle="tooltip"
+              data-bs-title="Envío en 24–48h"
+            >
+              🛒 Añadir
+            </button>
+          </div>
+
+          <div class="pt-2">
+            <span class="badge text-bg-success">Disponible</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card h-100 border-0 shadow-sm rounded-4">
+        <div class="card-body d-flex flex-column p-3">
+          <img
+            src="https://res.cloudinary.com/dfxkoiri5/image/upload/v1765840557/capsula-espresso4_psm6ug.jpg"
+            class="img-fluid mx-auto d-block mb-3 opacity-75"
+            alt="Cápsulas napoli"
+            loading="lazy"
+            data-bs-toggle="tooltip"
+            data-bs-title="Intensidad 10/10"
+          />
+
+          <h3 class="h6 fw-semibold mb-1">Pack 100 Èspresso1882 Napoli</h3>
+          <p class="text-secondary small mb-3">100 CAPSULE COMPATIBILI NESPRESSO®*</p>
+
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="fw-bold">31,20 €</span>
+            <button
+              class="btn btn-secondary btn-sm rounded-pill"
+              disabled
+              data-bs-toggle="tooltip"
+              data-bs-title="Temporalmente agotado"
+            >
+              🛒 Añadir
+            </button>
+          </div>
+
+          <div class="pt-2">
+            <span class="badge text-bg-secondary">Agotado</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+          <!-- TAB: MERCHANDISING -->
+<section
+  class="tab-pane fade"
+  id="merchandising"
+  role="tabpanel"
+  aria-labelledby="merchandising-tab"
+>
+  <h2 class="h5 mb-3">Merchandising</h2>
+
+  <div class="row g-3 g-md-4">
+    <!-- CARD 1 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card h-100 border-0 shadow-sm rounded-4">
+        <div class="card-body d-flex flex-column p-3">
+          <img
+            src="https://res.cloudinary.com/dfxkoiri5/image/upload/v1765840555/cup-coffee1_b9s9yb.jpg"
+            class="img-fluid mx-auto d-block mb-3"
+            alt="Taza de café"
+            loading="lazy"
+            data-bs-toggle="tooltip"
+            data-bs-title="taza de 230 ml"
+          />
+
+          <h3 class="h6 fw-semibold mb-1">Quy Cup Women in Coffee</h3>
+          
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="fw-bold">10,50 €</span>
+            <button
+              class="btn btn-primary btn-sm rounded-pill"
+              data-bs-toggle="tooltip"
+              data-bs-title="Envío en 24h"
+            >
+              🛒 Añadir
+            </button>
+          </div>
+
+          <div class="pt-2">
+            <span class="badge text-bg-info">Nuevo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card h-100 border-0 shadow-sm rounded-4">
+        <div class="card-body d-flex flex-column p-3">
+          <img
+            src="https://res.cloudinary.com/dfxkoiri5/image/upload/v1765840564/cup-coffee2_wtcrwh.jpg"
+            class="img-fluid mx-auto d-block mb-3"
+            alt="Taza de espresso pequeña"
+            loading="lazy"
+            data-bs-toggle="tooltip"
+            data-bs-title="taza de 90 ml"
+          />
+
+          <h3 class="h6 fw-semibold mb-1">Quy Cup Espresso</h3>
+
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="fw-bold">6,80 €</span>
+            <button
+              class="btn btn-primary btn-sm rounded-pill"
+              data-bs-toggle="tooltip"
+              data-bs-title="Envío en 48h"
+            >
+              🛒 Añadir
+            </button>
+          </div>
+
+          <div class="pt-2">
+            <span class="badge text-bg-warning text-dark">Limitado</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card h-100 border-0 shadow-sm rounded-4">
+        <div class="card-body d-flex flex-column p-3">
+          <img
+            src="https://res.cloudinary.com/dfxkoiri5/image/upload/v1765840564/cup-coffee3_sditqf.jpg"
+            class="img-fluid mx-auto d-block mb-3"
+            alt="Taza cappuccino"
+            loading="lazy"
+            data-bs-toggle="tooltip"
+            data-bs-title="taza de 230 ml"
+          />
+
+          <h3 class="h6 fw-semibold mb-1">Quy Cup Coffee Cappuccino</h3>
+
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="fw-bold">10,50 €</span>
+            <button
+              class="btn btn-success btn-sm rounded-pill"
+              data-bs-toggle="tooltip"
+              data-bs-title="Envío en 24–48h"
+            >
+              🛒 Añadir
+            </button>
+          </div>
+
+          <div class="pt-2">
+            <span class="badge text-bg-success">Disponible</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card h-100 border-0 shadow-sm rounded-4">
+        <div class="card-body d-flex flex-column p-3">
+          <img
+            src="https://res.cloudinary.com/dfxkoiri5/image/upload/v1765840568/cup-coffee4_squie4.jpg"
+            class="img-fluid mx-auto d-block mb-3 opacity-75"
+            alt="Vaso térmico de café"
+            loading="lazy"
+            data-bs-toggle="tooltip"
+            data-bs-title="vaso de 400 ml"
+          />
+
+          <h3 class="h6 fw-semibold mb-1">Quy Cup</h3>
+
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="fw-bold">14,90 €</span>
+            <button
+              class="btn btn-secondary btn-sm rounded-pill"
+              disabled
+              data-bs-toggle="tooltip"
+              data-bs-title="Temporalmente agotado"
+            >
+              🛒 Añadir
+            </button>
+          </div>
+
+          <div class="pt-2">
+            <span class="badge text-bg-secondary">Agotado</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+        </div>
+      </div>
+    </main>
+    <footer class="footer py-4 bg-white">
+    <div class="container d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between gap-2">
+      <div>
+        <div class="fw-semibold ">Evaluacion Integral Isil © 2025-II</div>
+        <small class="text-muted">Curso de Diseño y Desarrollo Web</small>
+      </div>
+      <div class="d-flex gap-3 text-dark">
+  <a href="#" class="text-dark fs-4">
+    <i class="fab fa-youtube"></i>
+  </a>
+  <a href="#" class="text-dark fs-4">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="#" class="text-dark fs-4">
+    <i class="fab fa-facebook-square"></i>
+  </a>
+</div>
+    </div>
+  </footer>
+
+    <!-- Bootstrap JS (Tooltips, Tabs, etc.) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Inicializar tooltips (requerido)
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+      [...tooltipTriggerList].map((el) => new bootstrap.Tooltip(el));
+    </script>
+  </body>
+</html>
